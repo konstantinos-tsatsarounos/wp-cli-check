@@ -15,7 +15,10 @@ if ( file_exists( $wpcli_check_autoloader ) ) {
 	require_once $wpcli_check_autoloader;
 }
 
-WP_CLI::add_command( 'checkurl', [Check::class, 'single'] );
+WP_CLI::add_command( 
+	'checkurl', 
+	[Check::class, 'single'] 
+);
 
 
 WP_CLI::add_command(

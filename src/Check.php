@@ -4,6 +4,10 @@ namespace WP_CLI\KonstantinosTsatsarounos;
 
 use WP_CLI;
 use WP_CLI_Command;
+use WP_CLI\Entity\RecursiveDataStructureTraverser;
+use WP_CLI\Formatter;
+use WP_CLI\Utils;
+use WP_CLI\Entity\Utils as EntityUtils;
 
 class Check extends WP_CLI_Command {
 
