@@ -56,7 +56,7 @@ class Check extends WP_CLI_Command {
 	 * @param array $assoc_args Associative array of associative arguments.
 	 */
 	public function pages($args, $assoc_args){
-		$pages = get_pages();
+		$pages = \get_pages();
 
 		$failed_results = [];
 		foreach ($pages as $page) {
